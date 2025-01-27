@@ -9146,7 +9146,7 @@
 			<HexValue>0x00000000</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
-			<UserfriendlyName>On - All levels will act as DLAA (base profile only)</UserfriendlyName>
+			<UserfriendlyName>On - All levels will act as DLAA</UserfriendlyName>
 			<HexValue>0x00000001</HexValue>
 		  </CustomSettingValue>
 		</SettingValues>
