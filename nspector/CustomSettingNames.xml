@@ -9162,6 +9162,14 @@
 			<HexValue>0x00000000</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
+			<UserfriendlyName>Preset A (v3.1 - v3.7)</UserfriendlyName>
+			<HexValue>0x00000001</HexValue>
+		  </CustomSettingValue>
+		  <CustomSettingValue>
+			<UserfriendlyName>Preset B (v3.1 - v3.7)</UserfriendlyName>
+			<HexValue>0x00000002</HexValue>
+		  </CustomSettingValue>
+		  <CustomSettingValue>
 			<UserfriendlyName>Preset C (v3.1 - v3.7)</UserfriendlyName>
 			<HexValue>0x00000003</HexValue>
 		  </CustomSettingValue>
@@ -9178,8 +9186,44 @@
 			<HexValue>0x00000006</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
+			<UserfriendlyName>Preset G (v3.1+ - Unused)</UserfriendlyName>
+			<HexValue>0x00000007</HexValue>
+		  </CustomSettingValue>
+		  <CustomSettingValue>
+			<UserfriendlyName>Preset H (v310+ - Unused)</UserfriendlyName>
+			<HexValue>0x00000008</HexValue>
+		  </CustomSettingValue>
+		  <CustomSettingValue>
+			<UserfriendlyName>Preset I (v310+ - Unused)</UserfriendlyName>
+			<HexValue>0x00000009</HexValue>
+		  </CustomSettingValue>
+		  <CustomSettingValue>
 			<UserfriendlyName>Preset J (v310+)</UserfriendlyName>
 			<HexValue>0x0000000A</HexValue>
+		  </CustomSettingValue>
+		  <CustomSettingValue>
+			<UserfriendlyName>Preset K (v310+)</UserfriendlyName>
+			<HexValue>0x0000000B</HexValue>
+		  </CustomSettingValue>
+		  <CustomSettingValue>
+			<UserfriendlyName>Preset L (v310+ - Unused)</UserfriendlyName>
+			<HexValue>0x0000000C</HexValue>
+		  </CustomSettingValue>
+		  <CustomSettingValue>
+			<UserfriendlyName>Preset M (v310+ - Unused)</UserfriendlyName>
+			<HexValue>0x0000000D</HexValue>
+		  </CustomSettingValue>
+		  <CustomSettingValue>
+			<UserfriendlyName>Preset N (v310+ - Unused)</UserfriendlyName>
+			<HexValue>0x0000000E</HexValue>
+		  </CustomSettingValue>
+		  <CustomSettingValue>
+			<UserfriendlyName>Preset O (v310+ - Unused)</UserfriendlyName>
+			<HexValue>0x0000000F</HexValue>
+		  </CustomSettingValue>
+		  <CustomSettingValue>
+			<UserfriendlyName>Latest Preset (v310+)</UserfriendlyName>
+			<HexValue>0x00FFFFFF</HexValue>
 		  </CustomSettingValue>
 		</SettingValues>
 		<SettingMasks/>
