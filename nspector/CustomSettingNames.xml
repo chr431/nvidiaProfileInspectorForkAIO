@@ -3,7 +3,6 @@
   |============= DESCRIPTION =============|
     This file defines additional settings exposed via nvidiaProfileInspector beyond what is available by default.
     When a new driver is released that contains new unexposed settings, they should typically be added here
-
   |===============================================================|
   |======== !!!IMPORTANT!!! DETAILS ABOUT HIDDEN SETTINGS ========|
   |===============================================================|
@@ -9134,10 +9133,11 @@
       </SettingValues>
       <SettingMasks/>
     </CustomSetting>
+
 	<CustomSetting>
-		<UserfriendlyName>DLSS 3.1+ Force DLAA</UserfriendlyName>
+		<UserfriendlyName>DLSS-SR Force DLAA</UserfriendlyName>
 		<HexSettingID>0x10E41DF4</HexSettingID>
-		<GroupName>0.2 - DLSS 3.1+ Overrides</GroupName>
+		<GroupName>0.2 - DLSS Overrides</GroupName>
 		<MinRequiredDriverVersion>0</MinRequiredDriverVersion>
 		<SettingValues>
 		  <CustomSettingValue>
@@ -9151,10 +9151,11 @@
 		</SettingValues>
 		<SettingMasks/>
 	  </CustomSetting>
+
 	  <CustomSetting>
-		<UserfriendlyName>DLSS 3.1+ Presets</UserfriendlyName>
+		<UserfriendlyName>DLSS-SR Preset</UserfriendlyName>
 		<HexSettingID>0x10E41DF3</HexSettingID>
-		<GroupName>0.2 - DLSS 3.1+ Overrides</GroupName>
+		<GroupName>0.2 - DLSS Overrides</GroupName>
 		<MinRequiredDriverVersion>0</MinRequiredDriverVersion>
 		<SettingValues>
 		  <CustomSettingValue>
@@ -9228,74 +9229,173 @@
 		</SettingValues>
 		<SettingMasks/>
 	  </CustomSetting>
-	  <CustomSetting>
-		<UserfriendlyName>DLSS 3.1+ Scaling Ratio</UserfriendlyName>
-		<HexSettingID>0x10E41DF5</HexSettingID>
-		<GroupName>0.2 - DLSS 3.1+ Overrides</GroupName>
-		<MinRequiredDriverVersion>0</MinRequiredDriverVersion>
-		<SettingValues>
+
+<CustomSetting>
+  <UserfriendlyName>DLSS-SR Override</UserfriendlyName>
+  <HexSettingID>0x10E41E01</HexSettingID>
+  <GroupName>0.2 - DLSS Overrides</GroupName>
+  <MinRequiredDriverVersion>0</MinRequiredDriverVersion>
+  <SettingValues>
+    <CustomSettingValue>
+      <UserfriendlyName>Off</UserfriendlyName>
+      <HexValue>0x00000000</HexValue>
+    </CustomSettingValue>
+    <CustomSettingValue>
+      <UserfriendlyName>On</UserfriendlyName>
+      <HexValue>0x00000001</HexValue>
+    </CustomSettingValue>
+  </SettingValues>
+  <SettingMasks/>
+</CustomSetting>
+
+<CustomSetting>
+  <UserfriendlyName>DLSS-RR Override</UserfriendlyName>
+  <HexSettingID>0x10E41E02</HexSettingID>
+  <GroupName>0.2 - DLSS Overrides</GroupName>
+  <MinRequiredDriverVersion>0</MinRequiredDriverVersion>
+  <SettingValues>
+    <CustomSettingValue>
+      <UserfriendlyName>Off</UserfriendlyName>
+      <HexValue>0x00000000</HexValue>
+    </CustomSettingValue>
+    <CustomSettingValue>
+      <UserfriendlyName>On</UserfriendlyName>
+      <HexValue>0x00000001</HexValue>
+    </CustomSettingValue>
+  </SettingValues>
+  <SettingMasks/>
+</CustomSetting>
+
+<CustomSetting>
+  <UserfriendlyName>DLSS-FG Override</UserfriendlyName>
+  <HexSettingID>0x10E41E03</HexSettingID>
+  <GroupName>0.2 - DLSS Overrides</GroupName>
+  <MinRequiredDriverVersion>0</MinRequiredDriverVersion>
+  <SettingValues>
+    <CustomSettingValue>
+      <UserfriendlyName>Off</UserfriendlyName>
+      <HexValue>0x00000000</HexValue>
+    </CustomSettingValue>
+    <CustomSettingValue>
+      <UserfriendlyName>On</UserfriendlyName>
+      <HexValue>0x00000001</HexValue>
+    </CustomSettingValue>
+  </SettingValues>
+  <SettingMasks/>
+</CustomSetting>
+
+<CustomSetting>
+  <UserfriendlyName>DLSS-RR Preset</UserfriendlyName>
+  <HexSettingID>0x10E41DF7</HexSettingID>
+  <GroupName>0.2 - DLSS Overrides</GroupName>
+  <MinRequiredDriverVersion>0</MinRequiredDriverVersion>
+  <SettingValues>
 		  <CustomSettingValue>
-			<UserfriendlyName>Off</UserfriendlyName>
-			<HexValue>0x00000000</HexValue>
+			<UserfriendlyName>Preset A (v3.5+)</UserfriendlyName>
+			<HexValue>0x00000001</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
-			<UserfriendlyName>Render at 0.25x native</UserfriendlyName>
-			<HexValue>0x3E800000</HexValue>
+			<UserfriendlyName>Preset B (v3.5+)</UserfriendlyName>
+			<HexValue>0x00000002</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
-			<UserfriendlyName>Render at 0.33x native (Ultra Performance)</UserfriendlyName>
-			<HexValue>0x3EAAAAAB</HexValue>
+			<UserfriendlyName>Preset C (v3.5+)</UserfriendlyName>
+			<HexValue>0x00000003</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
-			<UserfriendlyName>Render at 0.40x native</UserfriendlyName>
-			<HexValue>0x3ECCCCCD</HexValue>
+			<UserfriendlyName>Preset D (v3.5+)</UserfriendlyName>
+			<HexValue>0x00000004</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
-			<UserfriendlyName>Render at 0.50x native (Performance)</UserfriendlyName>
-			<HexValue>0x3F000000</HexValue>
+			<UserfriendlyName>Preset E (v3.7+)</UserfriendlyName>
+			<HexValue>0x00000005</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
-			<UserfriendlyName>Render at 0.58x native (Balanced)</UserfriendlyName>
-			<HexValue>0x3F147AE1</HexValue>
+			<UserfriendlyName>Preset F (v3.5+)</UserfriendlyName>
+			<HexValue>0x00000006</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
-			<UserfriendlyName>Render at 0.6666x native (Quality)</UserfriendlyName>
-			<HexValue>0x3F2AAAAA</HexValue>
+			<UserfriendlyName>Preset G (v3.1+ - Unused)</UserfriendlyName>
+			<HexValue>0x00000007</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
-			<UserfriendlyName>Render at 0.75x native</UserfriendlyName>
-			<HexValue>0x3F400000</HexValue>
+			<UserfriendlyName>Preset H (v310+)</UserfriendlyName>
+			<HexValue>0x00000008</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
-			<UserfriendlyName>Render at 0.77x native (Ultra Quality)</UserfriendlyName>
-			<HexValue>0x3F451EB8</HexValue>
+			<UserfriendlyName>Preset I (v310+)</UserfriendlyName>
+			<HexValue>0x00000009</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
-			<UserfriendlyName>Render at 0.80x native</UserfriendlyName>
-			<HexValue>0x3F4CCCCD</HexValue>
+			<UserfriendlyName>Preset J (v310+)</UserfriendlyName>
+			<HexValue>0x0000000A</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
-			<UserfriendlyName>Render at 0.85x native</UserfriendlyName>
-			<HexValue>0x3F59999A</HexValue>
+			<UserfriendlyName>Preset K (v310+ - Unusued)</UserfriendlyName>
+			<HexValue>0x0000000B</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
-			<UserfriendlyName>Render at 0.90x native</UserfriendlyName>
-			<HexValue>0x3F666666</HexValue>
+			<UserfriendlyName>Preset L (v310+)</UserfriendlyName>
+			<HexValue>0x0000000C</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
-			<UserfriendlyName>Render at 0.95x native</UserfriendlyName>
-			<HexValue>0x3F733333</HexValue>
+			<UserfriendlyName>Preset M (v310+)</UserfriendlyName>
+			<HexValue>0x0000000D</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
-			<UserfriendlyName>Render at 0.99x native (If DLAA/1.00x doesn't work)</UserfriendlyName>
-			<HexValue>0x3F7FBE77</HexValue>
+			<UserfriendlyName>Preset N (v310+)</UserfriendlyName>
+			<HexValue>0x0000000E</HexValue>
 		  </CustomSettingValue>
 		  <CustomSettingValue>
-			<UserfriendlyName>Render at 1.00x native (DLAA)</UserfriendlyName>
-			<HexValue>0x3F800000</HexValue>
+			<UserfriendlyName>Preset O (v310+)</UserfriendlyName>
+			<HexValue>0x0000000F</HexValue>
+		  </CustomSettingValue>
+		  <CustomSettingValue>
+			<UserfriendlyName>Latest Preset (v310+)</UserfriendlyName>
+			<HexValue>0x00FFFFFF</HexValue>
 		  </CustomSettingValue>
 		</SettingValues>
 		<SettingMasks/>
 	  </CustomSetting>
+
+<CustomSetting>
+  <UserfriendlyName>DLSS-SR Perf to Ultra Perf</UserfriendlyName>
+  <HexSettingID>0x10AFB76C</HexSettingID>
+  <GroupName>0.2 - DLSS Overrides</GroupName>
+  <MinRequiredDriverVersion>0</MinRequiredDriverVersion>
+  <SettingValues>
+    <CustomSettingValue>
+      <UserfriendlyName>Off</UserfriendlyName>
+      <HexValue>0x00000000</HexValue>
+    </CustomSettingValue>
+    <CustomSettingValue>
+      <UserfriendlyName>On - Force Ultra-Performance</UserfriendlyName>
+      <HexValue>0x00000001</HexValue>
+    </CustomSettingValue>
+  </SettingValues>
+  <SettingMasks/>
+</CustomSetting>
+
+<CustomSetting>
+  <UserfriendlyName>DLSS-FG Frame Count</UserfriendlyName>
+  <HexSettingID>0x104D6667</HexSettingID>
+  <GroupName>0.2 - DLSS Overrides</GroupName>
+  <MinRequiredDriverVersion>0</MinRequiredDriverVersion>
+  <SettingValues>
+    <CustomSettingValue>
+      <UserfriendlyName>2x</UserfriendlyName>
+      <HexValue>0x00000000</HexValue>
+    </CustomSettingValue>
+    <CustomSettingValue>
+      <UserfriendlyName>3x</UserfriendlyName>
+      <HexValue>0x00000001</HexValue>
+    </CustomSettingValue>
+    <CustomSettingValue>
+      <UserfriendlyName>4x</UserfriendlyName>
+      <HexValue>0x0000000F</HexValue>
+    </CustomSettingValue>
+  </SettingValues>
+  <SettingMasks/>
+</CustomSetting>
 	</Settings>
 </CustomSettingNames>
