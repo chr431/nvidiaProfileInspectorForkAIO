@@ -31,9 +31,8 @@ namespace nspector.Common.Meta
         }
 
         private SettingMeta GetDriverSettingMetaInternal(uint settingId)
-        {
-
-              // temporary fix for 571.96 overflow bug by emoose
+        {   
+            // temporary fix for 571.96 overflow bug by emoose
             if ((settingId & 0xFFFFF000) == 0x10c7d000)
                 return null;
            
