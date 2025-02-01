@@ -3,6 +3,7 @@
   |============= DESCRIPTION =============|
     This file defines additional settings exposed via nvidiaProfileInspector beyond what is available by default.
     When a new driver is released that contains new unexposed settings, they should typically be added here
+
   |===============================================================|
   |======== !!!IMPORTANT!!! DETAILS ABOUT HIDDEN SETTINGS ========|
   |===============================================================|
@@ -9290,6 +9291,10 @@
   <GroupName>0.2 - DLSS Overrides</GroupName>
   <MinRequiredDriverVersion>0</MinRequiredDriverVersion>
   <SettingValues>
+		  <CustomSettingValue>
+			<UserfriendlyName>N/A</UserfriendlyName>
+			<HexValue>0x00000000</HexValue>
+		  </CustomSettingValue>
 		  <CustomSettingValue>
 			<UserfriendlyName>Preset A (v3.5+)</UserfriendlyName>
 			<HexValue>0x00000001</HexValue>
