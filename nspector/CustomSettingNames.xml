@@ -9608,6 +9608,30 @@
 					<HexValue>0x00000000</HexValue>
 				</CustomSettingValue>
 				<CustomSettingValue>
+					<UserfriendlyName>Preset A</UserfriendlyName>
+					<HexValue>0x00000001</HexValue>
+				</CustomSettingValue>
+				<CustomSettingValue>
+					<UserfriendlyName>Preset B</UserfriendlyName>
+					<HexValue>0x00000002</HexValue>
+				</CustomSettingValue>
+				<CustomSettingValue>
+					<UserfriendlyName>Preset C</UserfriendlyName>
+					<HexValue>0x00000003</HexValue>
+				</CustomSettingValue>
+				<CustomSettingValue>
+					<UserfriendlyName>Preset D</UserfriendlyName>
+					<HexValue>0x00000004</HexValue>
+				</CustomSettingValue>
+				<CustomSettingValue>
+					<UserfriendlyName>Preset E (unused)</UserfriendlyName>
+					<HexValue>0x00000005</HexValue>
+				</CustomSettingValue>
+				<CustomSettingValue>
+					<UserfriendlyName>Preset F (unused)</UserfriendlyName>
+					<HexValue>0x00000006</HexValue>
+				</CustomSettingValue>
+				<CustomSettingValue>
 					<UserfriendlyName>Always use latest</UserfriendlyName>
 					<HexValue>0x00FFFFFF</HexValue>
 				</CustomSettingValue>
